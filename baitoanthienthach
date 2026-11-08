@@ -1,0 +1,68 @@
+#include <iostream>
+#include <cmath>
+#include <vector>
+using namespace std;
+
+void input_vector(vector <int> &v,int n){
+    while (n--){
+        int x;cin>>x;
+        v.push_back(x);
+    }
+}
+void print_vector(vector <int> v){
+    for (int x:v){
+        cout<<x<<" ";
+    }
+}
+int giatri(int n){
+    return (int)abs(n);
+}
+
+vector <int> thienthach(vector <int> &v){
+    vector <int> ans;
+    for (int x:v){
+        if (ans.empty()){
+            ans.push_back(x);
+        }else{
+            bool alive=true;
+            while (!ans.empty() && ans.back()>0 && x<0 ){
+                if (giatri(x)>giatri(ans.back())){
+                    ans.pop_back();
+                }else if (giatri(x)<giatri(ans.back())){
+                    alive=false;
+                    break; // x đã nổ , ngắt vòng lặp
+                }else {
+                    alive=false; 
+                    ans.pop_back();
+                    break; // x đã nổ , ngắt vòng lặp
+                }
+            }
+            if (alive==true){
+                ans.push_back(x);
+            }
+        }
+    }
+    
+    return ans;
+}
+
+
+int main(){
+    int n;
+    cin>>n;
+    vector <int> v;
+    input_vector(v,n);
+
+    cout<<"vector ban dau"<<endl;
+    print_vector(v);
+    //TO DO
+    vector <int> res=thienthach(v);
+    if (res.size()==0) cout<<"EMPTY";
+    else{
+        cout<<"Luc sau"<<endl;
+        print_vector(res);
+    }
+    
+
+    return 0;
+}
