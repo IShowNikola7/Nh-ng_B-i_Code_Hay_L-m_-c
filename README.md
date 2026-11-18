@@ -13,5 +13,6 @@ Kho lưu trữ bài tập rèn tư duy thuật toán, chia hàm nhỏ và tổ c
 - `04_struct/` : Thiết kế kiểu dữ liệu cấu trúc (`struct`), truyền tham chiếu hằng `const &`, tìm kiếm và sắp xếp đối tượng.
 - `05_doc_ghi_file/` : Đọc/ghi tệp văn bản (`ifstream`/`ofstream`), xử lý trôi lệnh, tách dữ liệu theo định dạng.
 - `06_con_tro_cap_phat_dong/` : Con trỏ, mảng động, chuỗi động, cấp phát và giải phóng bộ nhớ `new`/`delete`.
+- `baitoangemini/` : Thư mục tổng hợp tự do, chứa các bài tập LeetCode, giải thuật đa dạng, bài code luyện tập hằng ngày hoặc các bài tập tổng hợp không giới hạn chuyên đề.
 
 ---
