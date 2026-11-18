@@ -81,7 +81,7 @@ void VietHoaTen(Student a){
         cout<<ptr<<endl;
     }
 }
-void VietHoaTenList(Student a,int n){
+void VietHoaTenList(Student a[],int n){
     for (int i=0;i<n;i++){
         VietHoaTen(a[i]);
     }

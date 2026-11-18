@@ -23,6 +23,7 @@ void writeFile(Student a[],int n);
 void writeStudent(Student a);
 void readFile(Student a[],int &n);
 void VietHoaTen(Student a);
+void VietHoaTenList(Student a[],int n);
 
 
 
