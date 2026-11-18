@@ -1,6 +1,7 @@
 #include "sinhvien.h"
 #include <iostream>
 #include <fstream>
+#include <cstring>
 using namespace std;
 
 void inputBirthday(Student &a){
@@ -72,5 +73,17 @@ void writeFile(Student a[],int n){
     }
     fout.close();
     cout<<"Da ghi danh sach vao Danhsachsinhvien.txt"<<endl;
+}
+
+void VietHoaTen(Student a){
+    char *ptr=strtok(a.name," ");
+    while (ptr!=NULL){
+        cout<<ptr<<endl;
+    }
+}
+void VietHoaTenList(Student a,int n){
+    for (int i=0;i<n;i++){
+        VietHoaTen(a[i]);
+    }
 }
 
