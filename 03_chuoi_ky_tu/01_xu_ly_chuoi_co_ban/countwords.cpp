@@ -4,10 +4,8 @@ using namespace std;
 
 int countWords(char s[]){
     int dem=0;
-    if (strlen(s)==0) return 0;
     bool inWord=false;
-    int length=strlen(s);
-    for (int i=0;i<length;i++){
+    for (int i=0;s[i]!='\0';i++){
         if (s[i]!=' ' && inWord==false){
             dem++;
             inWord=true;
