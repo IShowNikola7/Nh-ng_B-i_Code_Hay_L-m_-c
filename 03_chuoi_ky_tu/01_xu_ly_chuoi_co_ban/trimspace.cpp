@@ -3,27 +3,27 @@
 using namespace std;
 
 int main(){
-    char s[101]="        Hello     bro   nha";
-    int read=0;
-    int write=0;
-    while (s[read]==' ' && s[read]!='\0'){
+    char s[101]="        Hello     bro   nha      ";
+    int read=0,write=0;
+    while (s[read]==' '){
         read++;
     }
     while (s[read]!='\0'){
         if (s[read]!=' '){
             s[write++]=s[read++];
-        }else if (s[read]==' '){
-            s[write++]=s[read++];
-            while (s[read]==' ' && s[read]!='\0'){
+        }else {
+            while (s[read]==' '){
                 read++;
+            }
+            if (s[read]!='\0'){
+                s[write++]=' ';
             }
         }
     }
-    if (write >0 && s[write-1]==' '){
-        write--;
-    }
     s[write]='\0';
+
     cout<<s;
+    cout<<'\n'<<write;
 
 
     return 0;
