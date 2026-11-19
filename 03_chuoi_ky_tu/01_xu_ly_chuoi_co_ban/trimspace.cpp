@@ -19,6 +19,9 @@ int main(){
             }
         }
     }
+    if (write >0 && s[write-1]==' '){
+        write--;
+    }
     s[write]='\0';
     cout<<s;
 
