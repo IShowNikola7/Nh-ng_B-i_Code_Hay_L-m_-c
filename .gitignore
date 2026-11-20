@@ -1,4 +1,32 @@
+# Compiled binaries & executables
 *.exe
-*.o
 *.out
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+
+# Specific binary files without extension
+03_chuoi_ky_tu/02_chuan_hoa_ten
+
+# Debugging & symbols
+*.pdb
+*.ilk
+*.dSYM/
+
+# Build & temp directories
+build/
+bin/
+out/
+obj/
+
+# IDE & Editor configurations
 .vscode/
+.idea/
+*.suo
+*.user
+
+# OS-generated files
+.DS_Store
+Thumbs.db

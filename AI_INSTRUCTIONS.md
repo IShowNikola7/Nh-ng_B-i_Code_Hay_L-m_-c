@@ -50,7 +50,8 @@ Vì bạn là chatbot trên web và không có quyền truy cập trực tiếp 
 ---
 
 ### BƯỚC 3: KHI TÔI ĐÃ LÀM ĐÚNG HOÀN TOÀN
-Cung cấp sẵn cho tôi 1 đoạn văn bản định dạng markdown (dạng checklist `- [x] ...`) để tôi chỉ cần copy và paste vào tệp `STUDY_LOG.md` trên máy nhằm lưu lại tiến độ học tập.
+1. **Cập nhật tiến độ:** Cung cấp sẵn cho tôi 1 đoạn văn bản định dạng markdown (dạng checklist `- [x] ...`) để tôi chỉ cần copy và paste vào tệp `STUDY_LOG.md` trên máy nhằm lưu lại tiến độ học tập.
+2. **Nhắc nhở vệ sinh Git:** Nhắc tôi tự commit & push bằng GitHub Desktop, lưu ý KHÔNG commit các file thực thi rác (`.exe`, file binary biên dịch) lên repo.
 
 ---
 
