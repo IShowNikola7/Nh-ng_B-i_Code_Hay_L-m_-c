@@ -1,11 +1,13 @@
 #include <iostream>
+
 using namespace std;
 
-// Ham sao chep toan bo ky tu tu src sang dest
-// Rang buoc: Khong dung <cstring>, chi phi bo nho phu O(1)
 void myStrcpy(char dest[], const char src[]) {
-    // TODO: Ban hay tu viet phan logic sao chep tai day
-    // Luu y: Nho sao chep ca ky tu ket thuc chuoi '\0'
+    int i=0;
+    for (i;src[i]!='\0';i++){
+        dest[i]=src[i];
+    }
+    dest[i]='\0';
 }
 
 int main() {
