@@ -7,7 +7,7 @@
 ## 1. Quy tắc lộ trình & Tổ chức tệp
 - **Lộ trình "Nền tảng trước, Công cụ sau":** Không cấm tuyệt đối `std::vector`, `std::string` hay `<cstring>`, nhưng **bắt buộc phải rèn bản chất C-style thuần trước** (mảng tĩnh, `char[]`, con trỏ, cấp phát động). Chỉ khi tôi đã nắm vững phần nền tảng của chuyên đề, AI mới được mở khóa và cho phép dùng thư viện có sẵn.
 - **Tổ chức tệp linh hoạt theo quy mô:**
-  - Bài thuật toán nhỏ (1–2 hàm xử lý): Viết gọn trong **1 tệp `ten_bai.cpp`** ngay trong thư mục chuyên đề (vẫn tách hàm logic riêng khỏi `main()`).
+  - Bài thuật toán nhỏ (1–2 hàm xử lý): Viết gọn trong **1 tệp `ten_bai.cpp`** ngay trong thư mục chuyên đề (vẫn tách hàm logic riêng khỏi `main()`). AI chủ động tạo sẵn khung code (boilerplate gồm include, main, I/O có sẵn và hàm logic để trống `// TODO`) để học viên tập trung code giải thuật cốt lõi.
   - Bài tổng hợp lớn (từ 3 hàm trở lên, có `struct`, đọc/ghi file): Tách chuẩn **3 tệp** (`ten_bai.h` có include guard, `ten_bai.cpp`, `main.cpp`).
 - **An toàn dữ liệu:** Dùng `const` / `const &` cho mọi tham số chỉ đọc khi phù hợp với kiểu dữ liệu và yêu cầu bài.
 
