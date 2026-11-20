@@ -48,6 +48,7 @@
 - [x] Dựng khung thư mục chuẩn, cấu trúc README và `baitoangemini/`.
 - [x] **`trimspace`** — hoàn thành và đã review logic trên GitHub.
 - [x] **`countWords`** — logic hoàn thành và đã review trên GitHub; còn việc dọn `#include <cstring>` thừa.
+- [x] **`on_tap_chuoi.cpp`** — Bài ôn tập tổng hợp (Đếm từ, Xóa khoảng trắng thừa in-place, Viết hoa chữ đầu) hoàn thành xuất sắc, xử lý triệt để bẫy trailing spaces.
 - [ ] **Bài tiếp theo: `myStrcpy`** — tự cài đặt sao chép `src` sang `dest`, bao gồm cả ký tự `'\\0'`, không dùng `strcpy()`.
 - [ ] **Sau đó: `myStrcmp`** — tự cài đặt so sánh hai chuỗi, không dùng `strcmp()`.
 - [ ] **Chặng 2 (`04_struct/` & `05_doc_ghi_file/`):** Hoàn thiện bài quản lý sinh viên và luyện đọc/ghi file đến EOF.
