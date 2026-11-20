@@ -28,8 +28,7 @@
   - Đã hoàn thành `trimspace`: xử lý trực tiếp trên mảng bằng hai chỉ số `read`/`write`; bỏ khoảng trắng đầu/cuối và gộp nhiều khoảng trắng liên tiếp thành một. Hiểu cách bỏ qua cả nhóm dấu cách trước khi ghi một dấu cách nếu phía sau còn ký tự.
   - Đã hoàn thành logic `countWords`: dùng cờ `bool inWord` để chỉ tăng bộ đếm khi bắt đầu một từ; gặp dấu cách thì đặt lại trạng thái. Đã sửa vòng lặp để dừng tại `'\\0'`, không cần `strlen()`.
   - **Việc nhỏ còn lại:** Xóa `#include <cstring>` thừa trong `countwords.cpp` (lần kiểm tra GitHub gần nhất vẫn còn dòng này).
-  - **Đã hoàn thành:** `myStrcpy` (tự cài đặt thủ công, xử lý đúng ký tự `\0`).
-  - **Chưa làm:** `myStrcmp` (so sánh chuỗi theo bảng mã ASCII).
+  - **Đã hoàn thành:** `myStrcpy`, `myStrcmp` (tự cài đặt thủ công, xử lý đúng ký tự `\0` và thứ tự từ điển ASCII).
 - **Struct (Đang củng cố):** Biết khai báo `struct`, mảng `struct`. *Còn thiếu: Thói quen truyền tham chiếu `Struct &` khi sửa dữ liệu và `const Struct &` khi chỉ đọc.*
 - **Đọc / Ghi File văn bản (Còn yếu — Cần luyện kỹ):** Biết mở/đóng `ifstream`/`ofstream` và dùng `ignore()`. *Còn thiếu: Chia nhỏ hàm đọc/ghi từng đối tượng (`writeStudent`), đọc file không biết trước số lượng (`while (fin >> ...)` / `getline` đến EOF).*
 - **Con trỏ & Cấp phát động (Chưa thạo — Trọng tâm sắp tới):** Mới biết sơ `&`, `*`. *Còn thiếu: Con trỏ với mảng/chuỗi, cấp phát động `new`/`delete`, mảng động 1D/2D.*
@@ -50,9 +49,9 @@
 - [x] **`trimspace`** — hoàn thành và đã review logic trên GitHub.
 - [x] **`countWords`** — logic hoàn thành và đã review trên GitHub; còn việc dọn `#include <cstring>` thừa.
 - [x] **`myStrcpy`** — Cài đặt chuẩn xác hàm sao chép chuỗi, xử lý ký tự kết thúc `\0`.
+- [x] **`myStrcmp`** — Cài đặt chuẩn xác hàm so sánh thứ tự từ điển chuỗi ký tự theo mã ASCII.
 - [x] **`on_tap_chuoi.cpp`** — Bài ôn tập tổng hợp (Đếm từ, Xóa khoảng trắng thừa in-place, Viết hoa chữ đầu) hoàn thành xuất sắc, xử lý triệt để bẫy trailing spaces.
-- [ ] **Bài tiếp theo: `myStrcpy`** — tự cài đặt sao chép `src` sang `dest`, bao gồm cả ký tự `'\\0'`, không dùng `strcpy()`.
-- [ ] **Sau đó: `myStrcmp`** — tự cài đặt so sánh hai chuỗi, không dùng `strcmp()`.
+- [ ] **Chặng tiếp theo: Con trỏ & Cấp phát động (`06_con_tro_cap_phat_dong/`)** — Nắm bản chất địa chỉ biến, toán tử `*`, `&`, cấp phát động `new`/`delete` mảng 1D, 2D.
 - [ ] **Chặng 2 (`04_struct/` & `05_doc_ghi_file/`):** Hoàn thiện bài quản lý sinh viên và luyện đọc/ghi file đến EOF.
 - [ ] **Chặng 3 (`06_con_tro_cap_phat_dong/`):** Luyện con trỏ và cấp phát động trước khi mở khóa `std::vector`.
 
